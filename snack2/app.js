@@ -34,3 +34,18 @@ const infoSquadra = [
 ];
 
 
+const newPar = [];
+
+
+for (let i = 0; i < infoSquadra.length; i++) {
+    const puntiFatti = Math.floor(Math.random() * 90);
+    const falliSubiti = Math.floor(Math.random() * 400);
+
+    newPar.push({
+        ...infoSquadra[i],
+        puntiFatti,
+        falliSubiti
+    })
+}
+
+console.table(newPar);
