@@ -33,6 +33,7 @@ const infoSquadra = [
 
 ];
 
+//Array numeri random   
 
 const newPar = [];
 
@@ -49,3 +50,21 @@ for (let i = 0; i < infoSquadra.length; i++) {
 }
 
 console.table(newPar);
+
+// Nuovo array con solo nomi e falli subiti
+
+const nomeFalli = [];
+
+for (let i = 0; i < infoSquadra.length; i++) {
+    const falliSubiti = Math.floor(Math.random()*400);
+    const {nome} = infoSquadra[i]
+   
+    nomeFalli.push({
+       nome,
+       falliSubiti
+        })
+}
+
+console.table(nomeFalli);
+
+
