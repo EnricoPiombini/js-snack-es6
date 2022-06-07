@@ -25,17 +25,39 @@ let students = [
     { name: "Luigi", id: 196, grades: 68 },
     { name: "Piero", id: 102, grades: 50 },
     { name: "Francesca", id: 120, grades: 84 },
-    ];
+];
 
-    
-    
-    // Creo gli elementi dell'array con tutte le lettere maiuscole 
 
-    const upperName = students.map((element) => {
-        return element.name.toUpperCase();
-    
-    });
 
-    console.log(upperName);
-    
-    
+// Creo gli elementi dell'array con tutte le lettere maiuscole 
+
+const upperName = students.map((element) => {
+    return element.name.toUpperCase();
+
+});
+
+console.log(upperName);
+
+// Array con voti superiori a 70
+
+
+const gradePlus = students.map((element) => {
+    if (element.grades > 70) {
+        return element;
+    }
+});
+
+console.log(gradePlus);
+
+// Array con voti superiori a 70 e id superiore a 120
+
+const gradeId = students.map((element) => {
+
+    if (element.grades > 70 && element.id > 120) {
+        return element
+    }
+
+});
+
+console.log(gradeId);
+
