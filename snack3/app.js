@@ -5,11 +5,11 @@
 // Creiamo un nuovo array contenente i valori che hanno la posizione compresa tra i due numeri.
 // Eseguiamo questo esercizio prima con forEach e poi con filter.
 
-
+// listaNomi.forEach(element, index, array) => {}
 
 const listaNomi = ["Michele", "Fabio", "Roberto", "Giovanni", "Simone", "Chiara"];
 
-// listaNomi.forEach(element, index, array) => {}
+
 
 const minMax = [];
 
@@ -25,5 +25,19 @@ listaNomi.forEach((element, i) => {
 });
 
 console.log(minMax);
+
+
+// Filter 
+
+const minMaxnomi = listaNomi.filter((element, i) => {
+
+   if(i > numeroMinore && i < numeroMaggiore){
+       return true;
+   } else {
+       return false;
+   }
+});
+
+console.log(minMaxnomi);
 
 
